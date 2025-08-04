@@ -22,17 +22,19 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 150px 1fr;
   gap: var(--spacing);
   grid-template-areas:
     "header school student"
-    "main   main  time"
-    "alumni footer footer";
+    "header main time"
+    "header alumni footer";
 }
 
+
+
 /* Áreas asignadas */
-.header {
+header {
   grid-area: header;
   background-color: var(--blue-color);
   color: white;
@@ -41,7 +43,7 @@ body {
   gap: 1rem;
 }
 
-.header h1 {
+header h1 {
   font-weight: bold;
 }
 
@@ -56,7 +58,7 @@ body {
   background-color: var(--orange-color);
 }
 
-.main-text {
+main {
   grid-area: main;
   border: var(--border);
   padding: var(--spacing);
@@ -65,7 +67,7 @@ body {
   place-items: center;
 }
 
-.main-text h2 {
+main h2 {
   color: var(--blue-color);
 }
 
@@ -79,7 +81,7 @@ body {
   background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg');
 }
 
-.footer {
+footer {
   grid-area: footer;
   background-color: var(--orange-color);
   color: white;
@@ -88,7 +90,7 @@ body {
   gap: 1rem;
 }
 
-.footer button {
+footer button {
   background-color: white;
   color: black;
   border: none;
