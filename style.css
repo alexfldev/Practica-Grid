@@ -33,7 +33,7 @@ body {
 
 
 
-/* Áreas asignadas */
+
 header {
   grid-area: header;
   background-color: var(--blue-color);
@@ -100,7 +100,7 @@ footer button {
   justify-self: start;
 }
 
-/* Estilo común para imágenes */
+/* Estilo  imágenes */
 .school,
 .student,
 .time,
